@@ -9,7 +9,7 @@ COPY . .
 
 RUN npm install
 
-FROM python:3.14.0a2-alpine3.21 AS python_base
+FROM python:3.14.0-alpine3.21 AS python_base
 
 COPY --from=node_base / .
 
